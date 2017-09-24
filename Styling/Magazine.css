@@ -1,0 +1,156 @@
+body{
+	background:#ccc;
+	overflow:hidden
+}
+
+.magHolder{
+	padding-left:200px;
+}
+
+#magazine{
+	padding-left:1px;
+}
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:cover;
+}
+
+
+
+
+.NextButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #e08e86;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e08e86;
+	box-shadow:inset 0px 1px 0px 0px #e08e86;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:41px;
+	-moz-border-radius-topright:41px;
+	border-top-right-radius:41px;
+	-webkit-border-bottom-right-radius:41px;
+	-moz-border-radius-bottomright:41px;
+	border-bottom-right-radius:41px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:2px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #810e05;
+}
+.NextButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}.NextButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.PrevButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #e08e86;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e08e86;
+	box-shadow:inset 0px 1px 0px 0px #e08e86;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:41px;
+	-moz-border-radius-topleft:41px;
+	border-top-left-radius:41px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:41px;
+	-moz-border-radius-bottomleft:41px;
+	border-bottom-left-radius:41px;
+	text-indent:0;
+	border:2px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #810e05;
+}
+.PrevButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}.PrevButton:active {
+	position:relative;
+	top:1px;
+}
+
+.PDFButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #e08e86;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e08e86;
+	box-shadow:inset 0px 1px 0px 0px #e08e86;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:41px;
+	-moz-border-radius-topleft:41px;
+	border-top-left-radius:41px;
+	-webkit-border-top-right-radius:41px;
+	-moz-border-radius-topright:41px;
+	border-top-right-radius:41px;
+	-webkit-border-bottom-right-radius:41px;
+	-moz-border-radius-bottomright:41px;
+	border-bottom-right-radius:41px;
+	-webkit-border-bottom-left-radius:41px;
+	-moz-border-radius-bottomleft:41px;
+	border-bottom-left-radius:41px;
+	text-indent:0;
+	border:2px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:150px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #810e05;
+}
+.PDFButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}.PDFButton:active {
+	position:relative;
+	top:1px;
+}

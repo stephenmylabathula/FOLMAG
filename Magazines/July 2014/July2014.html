@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=0.8,minimum-scale=0.8,maximum-scale=3.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../Flip/turn.min.js"></script>
+<script type="text/javascript" src="../../Scripting/Magazine.js"></script>
+<link rel="stylesheet" href="../../Styling/Magazine.css" type="text/css" media="all">
+
+<style>
+.spinner {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  position:absolute;
+  margin-left:700px;
+  margin-top:320px;
+	
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+</style>
+
+
+</head>
+<body onLoad="detect()">
+
+<div class="spinner"></div>
+
+<div class="magHolder">
+<p align="center">
+<div id="magazine">
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-001.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-002.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-003.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-004.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-005.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-006.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-007.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-008.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-009.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-010.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-011.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-012.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-013.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-014.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-015.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-016.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-017.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-018.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-019.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-020.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-021.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-022.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-023.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-024.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-025.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-026.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-027.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-028.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-029.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-030.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-031.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-032.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-033.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-034.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-035.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-036.jpg)"></div>
+	<div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-037.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-038.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-039.jpg)"></div>
+    <div style="background-image:url(FOL%20Trial%20%20July_Sept%202014/FOL%20Trial%20%20July_Sept%202014-page-040.jpg)"></div>
+</div>
+</p>
+<p align="center" style="padding-right:15px">
+<span class="PrevButton" onClick="prev()">PREV</span>
+<span class="NextButton" onClick="next()">NEXT</span>
+&nbsp;
+<a href="FOL Trial  July_Sept 2014.pdf" target="_blank"><span id="download" class="PDFButton">Open in iBooks</span></a>
+
+</p>
+</div>
+
+<script>
+function detect(){
+	
+	var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+	
+	if(iOS != true){
+		$('#download').css('visibility', 'hidden');
+	}
+}
+
+$(document).ready(function(){
+    $("div.spinner").hide();
+});
+</script>
+
+</body>
+</html>

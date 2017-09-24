@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<script>
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","../XML Articles/JontyRhodesInterview.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+
+var x=xmlDoc.getElementsByTagName("ARTICLE");
+
+for (i=0;i<x.length;i++)
+  { 
+  document.write("<h1 style=\'text-align:center\'><font face=\'Arial, Helvetica, sans-serif\'>");
+  document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+  document.write("<\/font><\/h1>");
+  
+  document.write("<h2 style=\'text-align:center\'><font face=\'Arial, Helvetica, sans-serif\'>");
+  document.write(x[i].getElementsByTagName("SUBTITLE")[0].childNodes[0].nodeValue);
+  document.write("<\/font><\/h2>");
+  
+  document.write("<h3 style=\'text-align:center\'><font face=\'Arial, Helvetica, sans-serif\'>");
+  document.write(x[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue);
+  document.write("<\/font><\/h3>");
+  
+  document.write("<br>");
+  
+  document.write("<p align=\'center\'><b><font color=\'#0099FF\' face=\'Arial, Helvetica, sans-serif\'>");
+  document.write(x[i].getElementsByTagName("SNIPPET")[0].childNodes[0].nodeValue);
+  document.write("<\/font><\/b><\/p>");
+  
+  document.write("<img src=\'..\/..\/Images\/Content\/");
+  document.write(x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue);
+  document.write("\' style=\'float:left; padding:10px\' \/>");
+
+  
+  document.write(x[i].getElementsByTagName("FULL")[0].childNodes[0].nodeValue);  
+  }
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

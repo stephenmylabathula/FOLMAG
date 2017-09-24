@@ -1,0 +1,313 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+
+<!--
+COLOR SCHEME
+
+Light Red - da2828
+Dark Red - 890f0e
+Light Gray - f0f3f4
+Dark Gray - 323232
+Black - 000000
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Foutain of Life - Home</title>
+	<link rel="stylesheet" href="Styling/Fol.css" type="text/css" media="all">
+    <link rel="stylesheet" href="Styling/Menu.css" type="text/css" media="all">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="Slider/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="Slider/flexslider2.css" type="text/css">
+    <link rel="stylesheet" href="Slider/flexslider1.css" type="text/css">
+	<script src="Slider/jquery.flexslider.js"></script>
+	<script src="Scripting/Fol.js"></script>
+    <script src="Scripting/NewsFeed.js"></script>
+    <script src="Scripting/CarouselBlocks.js"></script>
+	<script type="text/javascript" src="Fancybox/source/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="Fancybox/source/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="Fancybox/source/jquery.fancybox.css" type="text/css">
+    
+    <script>
+	
+	(
+	function checkIE ($) {
+    	"use strict";
+
+    	// Detecting IE
+   		 var oldIE;
+    		if ($('html').is('.ie6, .ie7, .ie8')) {
+        		oldIE = true;
+    		}
+
+    		if (oldIE) {
+        		alert("Your browser will not support some of the graphics on this website. Please update your browser to Internet Explorer 9 or higher.");
+    		} else {
+
+    		}
+
+	}(jQuery)
+	);
+
+	</script>
+
+    
+    
+    
+</head>
+
+
+
+
+<body id='bod'> 
+<!--THIS IS THE BACKGROUND WATERMARK-->
+<div id="bg" class="overlay"></div>
+
+	
+	<div class="container"><!--THIS IS ALL THE CONTENT-->
+	<br>
+    
+    <div class="topbar">
+
+  		<div class="header"> <!--THIS IS THE MAST-->
+			<a href="default.html"><img src="Images/Backgrounds/FOL Mast.jpg" alt="Fountain of Life - Home" width="952" height="218" style="background-color:#FFF; display:block;" /></a>
+  		</div>
+        
+  <!--THIS IS THE NAVIGATION BAR-->
+  	<div id='cssmenu' style="background:#F0F3F4;">
+    
+    <ul>
+    	<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav' href='default.html' onMouseOver="change_background_image('Images/Backgrounds/bread.jpg')">HOME</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav' target='_top' href='AboutUs.html' onMouseOver="change_background_image('Images/Backgrounds/faceaface.jpg')">ABOUT US</a></li>
+        
+        <li class='active has-sub'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav' target='_top' href='#'>ARCHIVES</a>
+        <ul>
+         <li class='last'><a href='Archives.html'><span>PAST ISSUES</span></a></li>
+         <li class='has-sub'><a href='#'><span>ARTICLES</span></a>
+            <ul>
+               <li><a href='UnseenUnheard.html'><span>UNSEEN UNHEARD</span></a></li>
+               <li><a href='Missions.html'><span>MISSIONS</span></a></li>
+               <li class='last'><a href='General.html'><span>GENERAL</span></a></li>
+            </ul></li>
+            <li class='last'><a href='FamilyTime.html'><span>FAMILY TIME</span></a></li>    
+      	</ul>
+        
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav' target='_top' href='HebraicRoots.html' onMouseOver="change_background_image('Images/Backgrounds/unseenunheard.jpg')">HEBRAIC ROOTS</a></li>   
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav fancybox fancybox.iframe' href="http://form.jotform.us/form/42637167431152">SUBSCRIPTION</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav' target='_top' href='FAQ.html'>FAQ</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='topnav' target='_top' href='ContactUs.html'>CONTACT US</a></li>   
+    </ul>
+
+  	</div>
+  	</div>
+  
+  <br>
+
+<!--THIS IS THE MAIN CONTENT-->
+<div class="mainContent" style="background-color:#F0F3F4; padding-bottom:0px; height:446px">
+<font face="Arial, Helvetica, sans-serif" size="+2" color="#323232"><strong>FEATURED ARTICLES</strong></font>
+<br><br>
+
+<div class="flexslider">
+  <ul class="slides">
+  
+    <li>
+      <div class="content">
+  		<table width="939" height="352" border="0" cellpadding="0" cellspacing="0">
+    		<tr>
+      			<td width="273"><img id='feedImage0' src="" width="273" height="349"></td>
+      			<td width="660">
+      				<h1 id = 'feedTitle0' style="font-family:Arial, Helvetica, sans-serif"></h1>
+      				<p><b id= 'feedSub0' style="font-family:Arial, Helvetica, sans-serif"></b></p>
+      				<br>
+      				<p id='feedSnippet0' style="padding-right:40px; font-family:Arial, Helvetica, sans-serif"></p><br>
+      				<p style="text-align:right; padding-right:40px; font-family:Arial, Helvetica, sans-serif"><a id='feedLink0' class="fancybox fancybox.iframe" rel="group" href="">Read More...</a></p>
+      			</td>
+   		 </tr>
+  		</table>
+		</div>
+    </li>
+    
+    
+    <li>
+      <div class="content">
+  		<table width="939" height="352" border="0" cellpadding="0" cellspacing="0">
+    		<tr>
+      			<td width="273"><img id='feedImage1' src="" width="273" height="349"></td>
+      			<td width="660">
+      				<h1 id = 'feedTitle1' style="font-family:Arial, Helvetica, sans-serif"></h1>
+      				<p><b id= 'feedSub1' style="font-family:Arial, Helvetica, sans-serif"></b></p>
+      				<br>
+      				<p id='feedSnippet1' style="padding-right:40px; font-family:Arial, Helvetica, sans-serif"></p><br>
+      				<p style="text-align:right; padding-right:40px; font-family:Arial, Helvetica, sans-serif"><a id='feedLink1' class="fancybox fancybox.iframe" rel="group" href="">Read More...</a></p>
+      			</td>
+   		 </tr>
+  		</table>
+		</div>
+    </li>
+    
+    
+    <li>
+      <div class="content">
+  		<table width="939" height="352" border="0" cellpadding="0" cellspacing="0">
+    		<tr>
+      			<td width="273"><img id='feedImage2' src="" width="273" height="349"></td>
+      			<td width="660">
+      				<h1 id = 'feedTitle2' style="font-family:Arial, Helvetica, sans-serif"></h1>
+      				<p><b id= 'feedSub2' style="font-family:Arial, Helvetica, sans-serif"></b></p>
+      				<br>
+      				<p id='feedSnippet2' style="padding-right:40px; font-family:Arial, Helvetica, sans-serif"></p><br>
+      				<p style="text-align:right; padding-right:40px; font-family:Arial, Helvetica, sans-serif"><a id='feedLink2' class="fancybox fancybox.iframe" rel="group" href="">Read More...</a></p>
+      			</td>
+   		 </tr>
+  		</table>
+		</div>
+    </li>
+    
+    
+    <li>
+      <div class="content">
+  		<table width="939" height="352" border="0" cellpadding="0" cellspacing="0">
+    		<tr>
+      			<td width="273"><img id='feedImage3' src="" width="273" height="349"></td>
+      			<td width="660">
+      				<h1 id = 'feedTitle3' style="font-family:Arial, Helvetica, sans-serif"></h1>
+      				<p><b id= 'feedSub3' style="font-family:Arial, Helvetica, sans-serif"></b></p>
+      				<br>
+      				<p id='feedSnippet3' style="padding-right:40px; font-family:Arial, Helvetica, sans-serif"></p><br>
+      				<p style="text-align:right; padding-right:40px; font-family:Arial, Helvetica, sans-serif"><a id='feedLink3' class="fancybox fancybox.iframe" rel="group" href="">Read More...</a></p>
+      			</td>
+   		 </tr>
+  		</table>
+		</div>
+    </li>
+  
+  </ul>
+  </div>
+</div>
+
+
+<br>
+
+<!--THIS IS THE CAROUSEL-->
+<div class="mainContent" style="background-color:#F0F3F4; padding-bottom:1px">
+<font face="Arial, Helvetica, sans-serif" size="+2" color="#323232"><strong>FACE A' FACE</strong></font>
+<br><br>
+<div class="flexslider1">
+  <ul class="slides">
+  
+    <li>
+        <div class="interviewBlocks" id='interview1' style="background-image:url(Images/Interviews/ravizach.jpg);">
+		<div class="hider" id="interview1HIDE">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px"><strong>The Dawn of a Legend</strong></span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:16pxpx">Interview with Dr. Ravi Zacharias</span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px">by Sunny Joseph Mylabathula</span>
+            <a class="fancybox fancybox.iframe" href="Content Pages/HTML Articles/RaviZachariasInterview.html"><span class="interviewButton">Read</span> </a> 
+		</div>
+		</div>
+    </li>
+    
+    
+    <li>
+    	<div class="interviewBlocks" id='interview2' style="background-image:url(Images/Interviews/NickyGumbel.jpg)">
+		<div class="hider" id="interview2HIDE">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px"><strong>Reaching Millions with Alpha</strong></span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:16pxpx">Interview with Rev. Nicky Gumbel</span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px">by Sunny Joseph Mylabathula</span>
+            <a class="fancybox fancybox.iframe" href="Content Pages/HTML Articles/NickyGumbelInterview.html"><span class="interviewButton">Read</span></a>
+		</div>
+		</div>
+    </li>
+    
+    
+    <li>
+		<div class="interviewBlocks" id='interview3' style="background-image:url(Images/Interviews/FranklinGraham.jpg); background-size:cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/FranklinGraham.jpg', sizingMethod='scale'); -ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/FranklinGraham.jpg', sizingMethod='scale')';">
+		<div class="hider" id="interview3HIDE">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px"><strong>In His Father's Steps</strong></span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:16pxpx">Interview with Dr. Franklin Graham</span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px">by Sunny Joseph Mylabathula</span>
+            <a class="fancybox fancybox.iframe" href="Content Pages/HTML Articles/FranklinGrahamInterview.html"><span class="interviewButton">Read</span></a> 
+		</div>
+		</div>
+    </li>
+    
+    
+    <li>
+		<div class="interviewBlocks" id='interview4' style="background-image:url(Images/Interviews/DavidWheaton.jpg); background-size:cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/DavidWheaton.jpg', sizingMethod='scale'); -ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/DavidWheaton.jpg', sizingMethod='scale')';">
+		<div class="hider" id="interview4HIDE">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px"><strong>The Testimony of a World Class Tennis Player</strong></span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:16pxpx">Interview with David Wheaton</span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px">by Sunny Joseph Mylabathula</span>
+            <a class="fancybox fancybox.iframe" href="Content Pages/HTML Articles/DavidWheatonInterview.html"><span class="interviewButton">Read</span></a>  
+		</div>
+		</div>
+    </li>
+    
+    <li>
+		<div class="interviewBlocks"id='interview5' style="background-image:url(Images/Interviews/Jonty.jpg); background-size:cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/Jonty.jpg', sizingMethod='scale'); -ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/Jonty.jpg', sizingMethod='scale')';">
+		<div class="hider" id="interview5HIDE">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px"><strong>Jonty Rhodes (Jonathan Neil Rhodes)</strong></span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:16pxpx">South African - Cricket Player</span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px">by Sunil Roberts</span>
+            <a class="fancybox fancybox.iframe" href="Content Pages/HTML Articles/JontyRhodesInterview.html"><span class="interviewButton">Read</span></a>  
+		</div>
+		</div>
+    </li>
+    
+    <li>
+		<div class="interviewBlocks"id='interview6' style="background-image:url(Images/Interviews/PhilipYancey.jpg); background-size:cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/PhilipYancey.jpg', sizingMethod='scale'); -ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/Interviews/PhilipYancey.jpg', sizingMethod='scale')';">
+		<div class="hider" id="interview6HIDE">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px"><strong>Inside the Mind of a Writer</strong></span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:16pxpx">Interview with Philip Yancey</span><br>
+    		<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px">by Sunny Joseph</span>
+            <a class="fancybox fancybox.iframe" href="Content Pages/HTML Articles/PhilipYancey.html"><span class="interviewButton">Read</span></a>  
+		</div>
+		</div>
+    </li>
+  
+  </ul>
+  </div>
+</div>
+
+
+
+<br>
+
+
+
+
+
+
+
+<!--THIS IS THE FOOTER-->
+<div class="footer">
+	<br>
+  <font face="Arial, Helvetica, sans-serif" color="#F0F3F4" style="padding-right:5px">Copyright © 2014 Fountain of Life Magazine. All rights reserved.</font>
+  	<br>
+</div>
+  
+  <br>
+    
+</div>
+</body>
+</html>
+
+
+<!--
+        &nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/default.asp' onMouseOver="change_background_image('Images/Backgrounds/bread.jpg'); ">HOME</a>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/html/default.asp' onMouseOver="change_background_image('Images/Backgrounds/faceaface.jpg'); ">ABOUT US</a>	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/css/default.asp' onMouseOver="change_background_image('Images/Backgrounds/pforg.jpg'); ">PAST ISSUES</a>     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/js/default.asp' onMouseOver="change_background_image('Images/Backgrounds/spirit.jpg'); ">HEBRAIC ROOTS</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/js/default.asp' onMouseOver="change_background_image('Images/Backgrounds/spirit.jpg'); ">UNSEEN UNHEARD</a>            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/sql/default.asp' onMouseOver="change_background_image('Images/Backgrounds/unseenunheard.jpg'); ">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class='topnav' target='_top' href='/php/default.asp' onMouseOver="change_background_image('Images/Backgrounds/editor.jpg'); ">CONTACT US</a>
+            -->
